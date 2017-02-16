@@ -2697,8 +2697,8 @@ class UnitOfWork implements PropertyChangedListener
                             // If it might be a subtype, it can not be lazy. There isn't even
                             // a way to solve this with deferred eager loading, which means putting
                             // an entity with subclasses at a *-to-one location is really bad! (performance-wise)
-                            $newValue = $this->getEntityPersister($assoc['targetEntity'])->loadOneToOneEntity($assoc, $entity, $associatedId);
-                            break;
+                            // $newValue = $this->getEntityPersister($assoc['targetEntity'])->loadOneToOneEntity($assoc, $entity, $associatedId);
+                            // break;
 
                         default:
                             switch (true) {
